@@ -1,0 +1,85 @@
+body {
+    background-color: #e6e9eb;
+}
+
+.calculadora {
+    width: 300px;
+    margin: auto;
+    margin-top: 5%;
+    background-color: #f4f4f4;
+    border-radius: 2%;
+    overflow: hidden;
+    box-shadow: 5px 5px 20px 0px #948c8c52;
+}
+
+/* VISOR */
+
+.tela {
+    background: linear-gradient(90deg, #9eff78 0%, #37ddff 100%);
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 5% 10%;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.4rem;
+    text-align: right;
+    color: #434343;
+}
+
+.tela .visor-grande {
+    height: 52px;
+}
+
+.tela .visor-pequeno {
+    font-size: 1.2rem;
+    color: rgba(136, 123, 123, 0.67);
+    padding-bottom: 0;
+    height: 40px;
+    position: relative;
+    top: 20px;
+}
+
+/* BOTOES */
+
+.todos-botoes {
+    display: grid;
+    padding: 0;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(5, 20%);
+}
+
+.todos-botoes button {
+    border: none;
+    border-radius: 0;
+    font-size: 1.3rem;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    padding: 30% 0;
+}
+
+.todos-botoes .igual {
+    background: linear-gradient(90deg, #9eff78 0%, #37ddff 100%);
+}   
+
+.todos-botoes .operadores, .todos-botoes .apagar {
+    background-color: #eaeaea;
+}
+
+.todos-botoes button:hover {
+    background-color: #434343;
+    color: white;
+    font-weight: 700;
+}
+
+.todos-botoes .zerar {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 0;
+}
+
+.todos-botoes .virgula {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
