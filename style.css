@@ -28,7 +28,9 @@ h1, h2 {
 }
 
 .tela .visor-grande {
-    height: 52px;
+    overflow-wrap: break-word;
+    line-height: 2.4rem;
+    padding-left: 0;
 }
 
 .tela .visor-pequeno {

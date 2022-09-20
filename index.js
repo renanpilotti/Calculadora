@@ -52,7 +52,7 @@ botaoIgual.addEventListener('click', () => {
         let resultado = 
         operacao(arrayNumerosOperador[0], arrayNumerosOperador[2], arrayNumerosOperador[1])
         
-        visorGrande.innerText = Number(resultado.toFixed(8)).toString().replace('.', ',')
+        visorGrande.innerText = Number(resultado.toPrecision(10)).toString().replace('.', ',')
         zerarCalculadora()
     }
 })
