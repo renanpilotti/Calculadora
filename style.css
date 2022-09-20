@@ -29,7 +29,7 @@ h1, h2 {
 
 .tela .visor-grande {
     overflow-wrap: break-word;
-    line-height: 2.4rem;
+    min-height: 51px;
     padding-left: 0;
 }
 
